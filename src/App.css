@@ -1,42 +1,369 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Rubik+Dirt&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Nova+Mono&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.material-symbols-outlined1 {
+  font-family: "Material Symbols Outlined";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 50px; /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.material-symbols-outlined2 {
+  font-family: "Material Symbols Outlined";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 70px; /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+.header {
+  background-color: aqua;
+  width: 100%;
+  opacity: 70%;
+  position: fixed;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  padding: 10px 40px;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  z-index: +3;
+}
+.header-logo {
+  display: grid;
+  grid-auto-flow: column;
+  gap: 1.5rem;
+  align-items: center;
+}
+.header-logo img {
+  width: 80px;
+  height: 80px;
+}
+.header-items {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: auto auto;
+}
+.Logo-span0 {
+  font-family: "Dancing Script", cursive;
+  font-size: 30px;
+}
+
+main {
+  position: relative;
+}
+.background-wrapper {
+  width: 100%;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: -2;
+}
+.background-image {
+  width: inherit;
+  height: fit-content;
+  object-fit: cover;
+  object-position: 50% 50%;
+}
+.logo-div {
+  width: 100%;
+  display: grid;
+  position: sticky;
+  position: -webkit-sticky;
+  bottom: 0px;
+  place-items: center;
+}
+.logo-div div {
+  height: 100px;
+}
+.logo-img {
+  width: 200px;
+  z-index: -1;
+}
+.Logo-span {
+  font-family: "Dancing Script", cursive;
+  font-size: 60px;
+  color: rgb(255, 255, 255);
+}
+.categories-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 2fr;
+  width: 100%;
+  background-color: aqua;
+}
+.categories-section2 {
+  display: grid;
+  grid-template-columns: 2fr 2fr 1fr;
+  width: 100%;
+  background-color: aqua;
+}
+.categories-section3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  width: 100%;
+  background-color: aqua;
+}
+.categories {
+  width: 100%;
+  height: 300px;
+}
+.categories-menu {
+  background-color: chocolate;
   color: white;
 }
+.res-circle {
+  display: grid;
+  background-color: brown;
+  place-content: center;
+}
+.circle-txt {
+  display: grid;
+  font-family: "Nova Mono", monospace;
+  place-content: center;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: bisque;
+  text-align: center;
+}
+.categories-menu {
+  display: grid;
+  place-content: center;
+  font-family: "Nova Mono", monospace;
+}
+.categories-image {
+  width: inherit;
+  height: inherit;
+}
+span {
+  font-family: catal;
+}
+.categories-about-us {
+  display: grid;
+  place-content: center;
+  font-family: "Nova Mono", monospace;
+}
+.categories-chef {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+.categories-location {
+  display: grid;
+  place-content: center;
+  background-color: darkslateblue;
+  color: aliceblue;
+  gap: 5px;
+}
+.categories-location .span {
+  font-family: "Nova Mono", monospace;
+  text-align: center;
+}
+.categories-location span {
+  text-align: center;
+}
+.story-section {
+  height: 400px;
+  display: grid;
+  background-color: blanchedalmond;
+  width: 100%;
+  grid-template-columns: auto auto auto;
+  place-content: center;
+  gap: 2rem;
+}
+.story-section .line {
+  height: 2px;
+  width: 80px;
+  background-color: rgb(0, 0, 0);
+  margin-top: 5px;
+}
+.story-section span {
+  font-family: "Nova Mono", monospace;
+}
+.text {
+  display: grid;
+  gap: 2rem;
+}
+.about-us {
+  width: 400px;
+}
+/*second page*/
+.second-header {
+  width: 100%;
+}
+.header-photo {
+  width: 100%;
+  height: 500px;
+  position: relative;
+}
+.header-photo img[src="/src/assets/img6.jpeg"] {
+  width: inherit;
+  height: inherit;
+  object-fit: cover;
+  object-position: 20% 70%;
+}
+.header-photo div {
+  position: absolute;
+  top: 15%;
+  background-color: aliceblue;
+  height: 350px;
+  width: 520px;
+  opacity: 85%;
+}
+.logo-img2 {
+  width: 120px;
+  height: 120px;
+}
+.header-photo h1 {
+  font-family: "Dancing Script", cursive;
+  font-size: 40px;
+}
+.white-div {
+  display: grid;
+  padding: 15px 50px;
+}
+.white-div span {
+  font-family: "Nova Mono", monospace;
+}
+.menu-nav {
+  display: grid;
+  height: 90px;
+  background-color: grey;
+  padding: 10px 50px;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+}
+.menu-nav div {
+  display: grid;
+  grid-auto-flow: column;
+  gap: 3rem;
+}
+.menu-nav div span a {
+  text-decoration: none;
+  color: aliceblue;
+  font-family: "Nova Mono", monospace;
+  font-size: 20px;
+}
+.more {
+  text-decoration: none;
+  color: aliceblue;
+  font-family: "Nova Mono", monospace;
+  font-size: 20px;
+}
+.important-section {
+  display: grid;
+  margin: 0px 50px;
+  grid-template-columns: 1fr auto;
+  gap: 6rem;
+}
+.food-type-item {
+  font-size: 18px;
+  display: grid;
+  grid-template-columns: 1fr auto;
 
-.App-link {
-  color: #61dafb;
+  padding: 20px;
+  font-family: "Nova Mono", monospace;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.459);
+  align-items: center;
+}
+.food {
+  font-size: 18px;
+  padding: 20px;
+  font-family: "Nova Mono", monospace;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.459);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.basket-main {
+  display: grid;
+  padding: 15px 0px;
+  gap: 1rem;
 }
+.basket-main span {
+  text-align: center;
+  font-family: "Nova Mono", monospace;
+  
+}
+.basket-main label {
+  display: grid;
+  gap: 10px;
+  font-family: "Nova Mono", monospace;
+}
+.basket footer {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  padding: 20px 0px;
+}
+aside button {
+  border-radius: 30px;
+  border-color: orangered;
+  color: orangered;
+  font-family: "Nova Mono", monospace;
+}
+.basket-main aside {
+  padding: 0px 25px;
+  display: grid;
+  gap: 2rem;
+  place-content: center;
+  grid-auto-flow: column;
+}
+.item-inbasket {
+  display: grid;
+  grid-template-columns: auto 1fr auto auto;
+  align-items: center;
+  gap: 1rem;
+}
+.item-inbasket input{
+  width: 50px;
+  height: 30px;
+  padding: 5px;
+}
+.basket button{
+  padding: 20px;
+  border-radius: 30px;
+  border-color: orangered;
+  color: orangered;
+  font-family: "Nova Mono", monospace;
+}
+.order-button{
+  text-align: center;
+}
+input[type="time"] {
+  height: 30px;
+  padding: 5px;
+}
+.item-inbasket span{
+ font-size: 18px;
+ font-family: "Nova Mono", monospace;
 
-button {
-  font-size: calc(10px + 2vmin);
+}
+footer span{
+  font-size: 18px;
+  font-family: "Nova Mono", monospace;
+}
+.rendering-items{
+  display: grid;
+  padding-top: 15px;
+  grid-template-columns: repeat(3, 150px);
+  gap: 1rem;
+}
+.rendering-items li {
+  list-style: none;
+  
+  background-color: grey;
+  padding: 10px 30px;
+
 }
