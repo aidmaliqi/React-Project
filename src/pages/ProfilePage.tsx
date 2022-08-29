@@ -1,4 +1,10 @@
+import { useState } from "react";
+
+type 
+
 export function Profile() {
+
+  const [userData , setUserData] = useState()
   return (
     <section className="bg-section">
       <img src="/src/assets/bg-1.webp" alt="" />

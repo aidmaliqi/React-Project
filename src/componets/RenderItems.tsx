@@ -28,7 +28,7 @@ export function RenderItems({ item , inBasket}: Prop) {
           <span>{element.name}</span>
           <span>{element.price}$</span>
 
-          <button onClick={() => {
+          <button className="tocart" onClick={() => {
             inBasket(element)
           }}>To Cart</button>
         </li>

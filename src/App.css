@@ -146,6 +146,7 @@ main {
 }
 .link {
   text-decoration: none;
+  color: black;
 }
 .categories-menu {
   display: grid;
@@ -466,4 +467,11 @@ footer span {
 .divdiv{
 display: grid;
 gap: 1rem;
+}
+.tocart{
+  padding: 5px;
+  border-radius: 10px;
+  border-color: orangered;
+  color: orangered;
+  border: 2px solid;
 }
