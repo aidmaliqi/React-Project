@@ -1,10 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik+Dirt&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Nova+Mono&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Nova+Mono&display=swap");
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 .material-symbols-outlined1 {
   font-family: "Material Symbols Outlined";
@@ -31,9 +33,10 @@
   word-wrap: normal;
   white-space: nowrap;
   direction: ltr;
+  color: black;
 }
 .header {
-  background-color: aqua;
+  background-color: rgb(230, 174, 53);
   width: 100%;
   opacity: 70%;
   position: fixed;
@@ -139,6 +142,10 @@ main {
   border-radius: 50%;
   background-color: bisque;
   text-align: center;
+  color: black;
+}
+.link {
+  text-decoration: none;
 }
 .categories-menu {
   display: grid;
@@ -156,6 +163,7 @@ span {
   display: grid;
   place-content: center;
   font-family: "Nova Mono", monospace;
+  background-color: olivedrab;
 }
 .categories-chef {
   width: 100%;
@@ -295,7 +303,6 @@ span {
 .basket-main span {
   text-align: center;
   font-family: "Nova Mono", monospace;
-  
 }
 .basket-main label {
   display: grid;
@@ -326,44 +333,137 @@ aside button {
   align-items: center;
   gap: 1rem;
 }
-.item-inbasket input{
+.item-inbasket input {
   width: 50px;
   height: 30px;
   padding: 5px;
 }
-.basket button{
+.basket button {
   padding: 20px;
   border-radius: 30px;
   border-color: orangered;
   color: orangered;
   font-family: "Nova Mono", monospace;
 }
-.order-button{
+.order-button {
   text-align: center;
 }
 input[type="time"] {
   height: 30px;
   padding: 5px;
 }
-.item-inbasket span{
- font-size: 18px;
- font-family: "Nova Mono", monospace;
-
-}
-footer span{
+.item-inbasket span {
   font-size: 18px;
   font-family: "Nova Mono", monospace;
 }
-.rendering-items{
+footer span {
+  font-size: 18px;
+  font-family: "Nova Mono", monospace;
+}
+.rendering-items {
   display: grid;
   padding-top: 15px;
-  grid-template-columns: repeat(3, 150px);
-  gap: 1rem;
+  grid-template-columns: repeat(2, 50%);
+  gap: 2rem;
 }
 .rendering-items li {
   list-style: none;
-  
-  background-color: grey;
+  border: 1px solid black;
+  background-color: rgb(82, 82, 82);
   padding: 10px 30px;
+  display: grid;
+  grid-template-columns: 1fr auto auto;
+  gap: 1rem;
+  align-items: center;
+}
+.rendering-items li span {
+  font-size: 18px;
+  font-family: "Nova Mono", monospace;
+  color: aliceblue;
+}
+.break-name {
+  width: 250px;
+  word-break: break-all;
+}
+/*Profile Page */
 
+.Profile-header {
+  display: grid;
+  width: 100%;
+  text-align: center;
+  gap: 1rem;
+  padding-top: 30px;
+  font-family: "Dancing Script", cursive;
+}
+.Profile-header h1 {
+  font-size: 50px;
+  color: royalblue;
+}
+.profile-main {
+  padding: 100px 200px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
+}
+.profile-main span {
+  color: white;
+}
+.profile-picture-div {
+  background-color: rgb(200, 164, 233);
+  position: relative;
+  padding-top: 90px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 10px;
+  
+}
+.profile-divs {
+  height: 500px;
+}
+.div1 {
+  display: grid;
+}
+.round-div {
+  position: absolute;
+  bottom: 420px;
+  left: 27%;
+  height: 170px;
+  width: 170px;
+  border-radius: 50%;
+  background-color: aquamarine;
+}
+.profile-divs h1 {
+  font-family: "Nova Mono", monospace;
+  font-size: 40px;
+  color: royalblue;
+}
+.profile-divs h3 {
+  font-family: "Nova Mono", monospace;
+  font-size: 25px;
+  color: royalblue;
+}
+.bg-section {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+.bg-section img {
+  position: absolute;
+  z-index: -1;
+  opacity: 95%;
+  width: inherit;
+  height: inherit;
+}
+.round-div img {
+  width: inherit;
+  height: inherit;
+  z-index: 0;
+  border-radius: 50%;
+  opacity: 100%;
+  object-fit: cover;
+}
+.divdiv{
+display: grid;
+gap: 1rem;
 }

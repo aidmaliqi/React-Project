@@ -4,6 +4,7 @@ import './App.css'
 import { Route, Routes } from 'react-router-dom'
 import { Home } from './pages/Home'
 import { OrderPage } from './pages/OrderPage'
+import { Profile } from './pages/ProfilePage'
 
 
 function App() {
@@ -14,7 +15,7 @@ function App() {
      <Routes>
       <Route path='/' element={<Home/>}/>
       <Route path='/menu' element={<OrderPage/>}></Route>
-
+<Route path='/Profile'element={<Profile/>}/> 
       
      </Routes>
     </div>

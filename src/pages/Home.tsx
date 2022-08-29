@@ -10,7 +10,8 @@ export function Home() {
         </div>
         <div></div>
         <div className="header-items">
-          <span className="material-symbols-outlined1">account_circle</span>
+          <Link to={'/Profile'} className="link"><span className="material-symbols-outlined1">account_circle</span></Link>
+          
           <span className="material-symbols-outlined1 ">menu</span>
         </div>
       </header>
@@ -28,12 +29,14 @@ export function Home() {
           <span className="Logo-span"> Mediterranean </span>
           <span className="Logo-span"> Grill</span>
           <div></div>
-          <span className="material-symbols-outlined2">arrow_downward</span>
+          <a href="#first-section">
+            <span className="material-symbols-outlined2">arrow_downward</span>
+          </a>
         </div>
 
-        <section className="categories-section">
+        <section className="categories-section" id="first-section">
           <div className="res-circle">
-            <Link  to='/menu'>
+            <Link to="/menu" className="link">
               <div className="circle-txt">Order Online</div>
             </Link>
           </div>
@@ -93,7 +96,7 @@ export function Home() {
           </div>
           <div className="categories">
             <img
-              src="/src/assets/bg5.webp"
+              src="/src/assets/img9.jpeg"
               alt=""
               className="categories-image"
             />
